@@ -1,508 +1,361 @@
-<!-- la etique mas importante a nivel de dom ya que me representa el tipo de documento para que el navegar interprete que es html -->
-
-<!-- <p> Conocimiento ,Proyectos, Expe, Conoceme,Contac </p> -->
-
 <!DOCTYPE html>
-<!-- Es el padre de todas mis etiquetas atributo lang representa el lenguaje  -->
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Portafolio</title>
-  <link rel="shortcut icon" href="img/Portafolio.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-
- <!--  <style type="text/css">
-    body {
-    font-family: "Segoe UI", sans-serif;
-    font-size:100%;
-    margin:0;
-    padding:0;
-}
-    header {
-    background:#333;
-    color:#eee;
-    width:100%;
-}
-
-input#abrir-cerrar {
-    visibility:hidden;
-    position: absolute;
-    top: -9999px;
-}
-
-
-label[for="abrir-cerrar"] {
-    cursor:pointer;
-    padding: 1rem;
-    background-color:#333;
-    color:#fff;
-    display:inline-block;
-    width:100%;
-
-}
-
-.cerrar {
-    display:none;
-}
-
-#sidebar {
-    width:0;
-}
-
-#contenido {
-    margin-left:0;
-}
-
-input#abrir-cerrar:checked ~ #sidebar {
-    width:300px;
-}
-
-input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
-    margin-left:300px;
-    transition: margin-left .4s;
-}
-
-
-input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
-    display:inline;
-}
-
-input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
-    display:none;
-}
-
-.sidebar {
-    position: fixed;
-    height: 100%;
-    width: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #00324b;
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding: 1rem 0;
-    box-sizing:border-box;
-}
-
-.sidebar .boton-cerrar {
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    font-size: 2rem;
-    display: block;
-    padding: 0;
-    line-height: 1.5rem;
-    margin: 0;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    vertical-align: top;
-}
-
-.sidebar ul, .sidebar li{
-    margin:0;
-    padding:0;
-    list-style:none inside;
-}
-
-.sidebar ul {
-    margin: 4rem auto;
-    display: block;
-    width: 80%;
-    min-width:200px;
-}
-
-.sidebar a {
-    display: block;
-    font-size: 120%;
-    color: #eee;
-    text-decoration: none;
-    
-}
-
-.sidebar a:hover{
-    color:#fff;
-    background-color: #f90;
-
-}
-
-h1 {
-    color:#f90;
-    font-size:180%;
-    font-weight:normal;
-}
-#contenido {
-    transition: margin-left .4s;
-    padding: 1rem;
-}
-
-.abrir-cerrar {
-    color: #2E88C7;
-    font-size:1rem;   
-}
-
-  </style> -->
-  
+    <meta charset="UTF-8" />
+    <title>Portafolio</title>
+    <link rel="shortcut icon" href="img/Portafolio.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  
-
-  <figure class="Container-Menu">
-  
-    <img class="Fig-menu" src="img/lista.png" alt="Menu">
-
-  </figure>
-
-  <header class="header">
-    <div class="wrapper">
-      <figure>
-       <img src="img/logo.png" alt="Logo de git" />
-      </figure>
-     <!--  <nav class="menu animated fast fadeIn"> -->
-       <nav class="menu">
-       <ul>
-          <li><a class="link" href="#experiencia">Experiencia</a></li>
-
-          <li><a class="link" href="#proyecto">Conocimientos</a></li>
-          
-          <li><a class="link" href="#conoceme">Conoceme</a></li>
-
-          <li><a class="link" href="#contactame" >Contactame</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- <section class="main">
-    <div class="wrapper">
-    <h1>Hola! soy <span>David Torres</span> <br>
-      desarrollador <span>javascript</span> con <br> 
-      amor por la <span>enseñanza</span>
-    </h1>
-      <figure>
-        <img src="img/img_main.jpg" alt="Tabla con tablet y lapiceros" width="500">
-      </figure>
-    </div>
-  </section> -->
-
-  <section id="proyecto" class="proyectos">
-    <div class="wrapper">
-    <h2>Conocimientos</h2>
-
-    <article class="articuloProyecto">
-    <div class="articuloProyecto-left">
-      <h3 class="articuloProyecto-title">Framework</h3>
-      <h4 class="articuloProyecto-language">ANGULAR</h4>
-      <p class="articuloProyecto-date"><strong>Fecha de aprendizaje : 07/10/2020</strong></p>
-      <p class="articuloProyecto-link"><a href="#">Link de gitHub ANGULAR</a></p>
-      <p class="articuloProyecto-description">
-      Framework de JavaScript oficialmente de google y este es el cual le brinda el soporte a este poderoso framework.<br>
-      Los motivos que hacen fuerte Angular es que la creacion de una aplicacion web en esta. es (Single Page) la cual aumenta la velocidad de navegacion de una pagina web ya una ves esta haya sido cargada.<br>
-      Desarrollo MVC es muy sencillo ya que el framework se encarga de sincronizar de manera involuntaria, cabe resaltar la compatibilidad en la mayoria de navegadores web.
-
-      </p> 
-    </div>
-    
-    <figure class="articuloProyecto-container_image">
-      <img class="articuloProyecto-image" src="img/angular.png" alt="Agendita">
+    <figure class="Container-Menu">
+        <img class="Fig-menu" src="img/lista.png" alt="Menu" />
     </figure>
 
-  </article>
+    <header class="header">
+        <div class="wrapper">
+            <figure>
+                <img src="img/logo.png" alt="Logo de git" />
+            </figure>
 
+            <nav class="menu">
+                <ul>
+                    <li><a class="link" href="#experiencia">Experiencia</a></li>
 
- <article class="articuloProyecto">
-    <div class="articuloProyecto-left">
-      <h3 class="articuloProyecto-title">Lenguaje de Consulta Estructurado</h3>
-      <h4 class="articuloProyecto-language">SQL</h4>
-      <p class="articuloProyecto-date"><strong>Fecha de aprendizaje : 05/02/2019</strong></p>
-      <p class="articuloProyecto-link"><a href="https://github.com/Jesus-David-Vidal-Ramirez/Software-Peluqueria">Link de gitHub SQL</a></p>
-      <p class="articuloProyecto-description">Lenguaje de Consulta Estructurado (SQL) es un lenguaje dedicado a la manipulacion de datos que esten reservados en una base de datos, las cuales se desempeñan en realizar una serie de busqueda o filtros para que esta le de una serie de respuestas que un usuario este necesitando lo mas eficiente posible.<br>
-      Gestores de bases de datos utilizados o con los que he tenido ciertas experiencias como los son <strong>MYSQL, MARIADB</strong>
-      
+                    <li><a class="link" href="#proyecto">Conocimientos</a></li>
 
-      </p>
-    </div>
-    <figure class="articuloProyecto-container_image">
-      <img class="articuloProyecto-image" src="img/sql.png" alt="Agendita">
-    </figure>
+                    <li><a class="link" href="#conoceme">Conoceme</a></li>
 
-  </article>
-
-  <article class="articuloProyecto">
-    <div class="articuloProyecto-left">
-      <h3 class="articuloProyecto-title">Lenguaje de programacion</h3>
-      <h4 class="articuloProyecto-language">PHP</h4>
-      <p class="articuloProyecto-date"><strong>Fecha de aprendizaje : 04/02/2019</strong></p>
-      <p class="articuloProyecto-link"><a href="https://github.com/Jesus-David-Vidal-Ramirez/Accion-Climatica">Link de gitHub PHP</a></p>
-      <p class="articuloProyecto-description">PHP es un lenguaje de programacion que se adapta especialmente al desarrollo web ya que este puede escribirse en un documento html, el codigo que se genere en este tendra que ser ejecutado del lado del servidor para asi poder mostrarse del lado del cliente.<br>
-      La curva de aprendizaje sobre este lenguaje es baja ya que es facil de entender, los conocimientos adquiridos sobre este lenguaje son la creacion de formularios, redireccionamiento de paginas, conexiónes a BD, Login, peticiones CRUD, entre otras.
-      
-      </p>
-    </div>
-    <figure class="articuloProyecto-container_image">
-      <img class="articuloProyecto-image" src="img/PHPFull.png" alt="Agendita">
-    </figure>
-  </article>
-
-  <article class="articuloProyecto">
-    <div class="articuloProyecto-left">
-      <h3 class="articuloProyecto-title">Lenguaje de hojas de estilo</h3>
-      <h4 class="articuloProyecto-language">CSS</h4>
-      <p class="articuloProyecto-date"><strong>Fecha de aprendizaje : 08/04/2018</strong></p>
-      <p class="articuloProyecto-link"><a href="#">Link de gitHub css</a></p>
-      <p class="articuloProyecto-description">Css es un lenguaje de hojas de estilo, que se considera que va por su version-3 la cual tuvo indicios de que no fue haci y fueron cosas de marketing o cierto aspecto que no se han hecho publicos. <br>
-      Este consistes con tomar el contenido de una etiqueta o elemento del HTML y ponerle un valor a cierto atributos css para que este le proporcione los estilos como puedene ser (tamaño, color, tipo de letra del texto, separación horizontal y vertical entre elementos, sobreponer elementos) 
-      
-      </p>
-    </div>
-    <figure class="articuloProyecto-container_image">
-      <img class="articuloProyecto-image" src="img/Cssfull.png" alt="Agendita">
-    </figure>
-  </article>
-
-  <article class="articuloProyecto">
-    <div class="articuloProyecto-left">
-      <h3 class="articuloProyecto-title">Lenguaje de etiquetas</h3>
-      <h4 class="articuloProyecto-language">HTML5</h4>
-      <p class="articuloProyecto-date"><strong>Fecha de aprendizaje : 04/02/2018</strong></p>
-      <p class="articuloProyecto-link"><a href="https://github.com/Jesus-David-Vidal-Ramirez/Mantenimiento-Informativo">Link de gitHub HTML5</a></p>
-      <p class="articuloProyecto-description">Html es un lenguaje de etiquetas el cual HTML5 es su ultima version mas
-      reciente, con la cual se pueden contar con distintas etiqueta, atributo, comportamientos.<br>
-      Esta conlleva a un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance.<br>
-      Cuento con los conocimientos practicos sobre este etiquetado sus distintos elementos y sus buenas practicas a la hora de maquetar una pagina web.
-      <!-- , la creacion de formularios, footer, barras de navegaciones, entre las cuales podran visualizar en el enla -->
-      </p>
-    </div>
-    <figure class="articuloProyecto-container_image">
-      <img class="articuloProyecto-image" src="img/Htmlfull.png" alt="Agendita">
-    </figure>
-  </article>
-
-  <article class="articuloProyecto">
-    <div class="articuloProyecto-left">
-      <h3 class="articuloProyecto-title">Lenguaje de programacion</h3>
-      <h4 class="articuloProyecto-language">Java</h4>
-      <p class="articuloProyecto-date"><strong>Fecha de aprendizaje : 15/08/2016</strong></p>
-      <p class="articuloProyecto-link"><a href="https://github.com/Jesus-David-Vidal-Ramirez/Matrices">Link de gitHub JAVA</a></p>
-      <p class="articuloProyecto-description">Java es un lenguaje de progamacion orientado a objetos comun mente utilizado en sitios web, aplicaciones moviles, aplicaciones de escritorio, incluso juegos.<br>
-      Este lenguaje de programacion es multiplataformas ya que puede ser ejecutado en cualquier S.O haciendo de estes una gran ventaja.<br>
-      Los que puedo hacer con java son multitudes de cosas desde conexiones con BD, peticiones SQL, Diseñar interfaz de usuario, relacionarlo con paginas web, estos son uno de mis experiencias con este lenguaje.
-      </p>
-    </div>
-    <figure class="articuloProyecto-container_image">
-      <img class="articuloProyecto-image" src="img/Java.png" alt="Agendita">
-    </figure>
-  </article>
-
-
-
- 
-
-</div>
-  </section>
-
-
-<!-- 
-VIDEOS
-<div class="Contenedor-Video">
-	<iframe class="Video"  width="560" height="315" src="https://www.youtube.com/embed/eBpdjKarVn4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-
-</div>
- -->
-
-
-
-
- 
-<div class="wrapper">
-  <h2 class="experiencia-titulo" id="experiencia">
-  Experiencia</h2>
-</div>
-
-
-
-  <section  class="experiences">
-    <div class="wrapper">
-    <article class="experience">
-    	
-      <!-- <figure class="experience-container_image"> -->
-        <!-- <img class="experience-image" src="img/experiencia.jpg" alt="postres yogurt griego"> -->
-        <div class="Contenedor-Video">
-	         <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/goZuwmgj0k4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                    <li><a class="link" href="#contactame">Contactame</a></li>
+                </ul>
+            </nav>
         </div>
-   
-      <div class="experience-down">
-        <h3 class="experience-title">Calculadora</h3>
-        <p class="experience-description">Este es uno de los procesos academicos que pude desarrollar y el cual genere un video para demostrar y explicar un poco el funcionamiento de la elaboracion de un sotfware para tener mas visibilidad de los proyectos realizados dirigase a mi cuenta de GitHub <a href="https://github.com/Jesus-David-Vidal-Ramirez" target="_black"> Jesus-David-Vidal-Ramirez </a></p>
+    </header>
 
-        <button>Enviar</button>
-        
+
+    <section id="proyecto" class="proyectos">
+        <div class="wrapper">
+            <h2>Conocimientos</h2>
+
+            <article class="articuloProyecto">
+                <div class="articuloProyecto-left">
+                    <h3 class="articuloProyecto-title">Framework</h3>
+                    <h4 class="articuloProyecto-language">ANGULAR</h4>
+                    <p class="articuloProyecto-date">
+                        <strong>Fecha de aprendizaje : 07/10/2020</strong>
+                    </p>
+                    <p class="articuloProyecto-link">
+
+                    </p>
+                    <p class="articuloProyecto-description">
+                        Framework de JavaScript oficialmente de google y este es el cual le brinda el soporte a este poderoso framework.<br /> Los motivos que hacen fuerte Angular es que la creacion de una aplicacion web en esta. es (Single Page) la cual
+                        aumenta la velocidad de navegacion de una pagina web ya una ves esta haya sido cargada.<br /> Desarrollo MVC es muy sencillo ya que el framework se encarga de sincronizar de manera involuntaria, cabe resaltar la compatibilidad
+                        en la mayoria de navegadores web.
+                    </p>
+                </div>
+
+                <figure class="articuloProyecto-container_image">
+                    <img class="articuloProyecto-image" src="img/angular.png" alt="Agendita" />
+                </figure>
+            </article>
+
+            <article class="articuloProyecto">
+                <div class="articuloProyecto-left">
+                    <h3 class="articuloProyecto-title">
+                        Lenguaje de Consulta Estructurado
+                    </h3>
+                    <h4 class="articuloProyecto-language">SQL</h4>
+                    <p class="articuloProyecto-date">
+                        <strong>Fecha de aprendizaje : 05/02/2019</strong>
+                    </p>
+                    <p class="articuloProyecto-link">
+
+                    </p>
+                    <p class="articuloProyecto-description">
+                        Lenguaje de Consulta Estructurado (SQL) es un lenguaje dedicado a la manipulacion de datos que esten reservados en una base de datos, las cuales se desempeñan en realizar una serie de busqueda o filtros para que esta le de una serie de respuestas que
+                        un usuario este necesitando lo mas eficiente posible.<br /> Gestores de bases de datos utilizados o con los que he tenido ciertas experiencias como los son <strong>MYSQL, MARIADB</strong>
+                    </p>
+                </div>
+                <figure class="articuloProyecto-container_image">
+                    <img class="articuloProyecto-image" src="img/sql.png" alt="Agendita" />
+                </figure>
+            </article>
+
+            <article class="articuloProyecto">
+                <div class="articuloProyecto-left">
+                    <h3 class="articuloProyecto-title">Lenguaje de programacion</h3>
+                    <h4 class="articuloProyecto-language">PHP</h4>
+                    <p class="articuloProyecto-date">
+                        <strong>Fecha de aprendizaje : 04/02/2019</strong>
+                    </p>
+                    <p class="articuloProyecto-link">
+
+                    </p>
+                    <p class="articuloProyecto-description">
+                        PHP es un lenguaje de programacion que se adapta especialmente al desarrollo web ya que este puede escribirse en un documento html, el codigo que se genere en este tendra que ser ejecutado del lado del servidor para asi poder mostrarse del lado del cliente.<br
+                        /> La curva de aprendizaje sobre este lenguaje es baja ya que es facil de entender, los conocimientos adquiridos sobre este lenguaje son la creacion de formularios, redireccionamiento de paginas, conexiónes a BD, Login, peticiones
+                        CRUD, entre otras.
+                    </p>
+                </div>
+                <figure class="articuloProyecto-container_image">
+                    <img class="articuloProyecto-image" src="img/PHPFull.png" alt="Agendita" />
+                </figure>
+            </article>
+
+            <article class="articuloProyecto">
+                <div class="articuloProyecto-left">
+                    <h3 class="articuloProyecto-title">Lenguaje de hojas de estilo</h3>
+                    <h4 class="articuloProyecto-language">CSS</h4>
+                    <p class="articuloProyecto-date">
+                        <strong>Fecha de aprendizaje : 08/04/2018</strong>
+                    </p>
+                    <p class="articuloProyecto-link">
+
+                    </p>
+                    <p class="articuloProyecto-description">
+                        Css es un lenguaje de hojas de estilo, que se considera que va por su version-3 la cual tuvo indicios de que no fue haci y fueron cosas de marketing o cierto aspecto que no se han hecho publicos.
+                        <br /> Este consistes con tomar el contenido de una etiqueta o elemento del HTML y ponerle un valor a cierto atributos css para que este le proporcione los estilos como puedene ser (tamaño, color, tipo de letra del texto, separación
+                        horizontal y vertical entre elementos, sobreponer elementos)
+                    </p>
+                </div>
+                <figure class="articuloProyecto-container_image">
+                    <img class="articuloProyecto-image" src="img/Cssfull.png" alt="Agendita" />
+                </figure>
+            </article>
+
+            <article class="articuloProyecto">
+                <div class="articuloProyecto-left">
+                    <h3 class="articuloProyecto-title">Lenguaje de etiquetas</h3>
+                    <h4 class="articuloProyecto-language">HTML5</h4>
+                    <p class="articuloProyecto-date">
+                        <strong>Fecha de aprendizaje : 04/02/2018</strong>
+                    </p>
+                    <p class="articuloProyecto-link">
+
+                    </p>
+                    <p class="articuloProyecto-description">
+                        Html es un lenguaje de etiquetas el cual HTML5 es su ultima version mas reciente, con la cual se pueden contar con distintas etiqueta, atributo, comportamientos.<br /> Esta conlleva a un conjunto más amplio de tecnologías que permite
+                        a los sitios Web y a las aplicaciones ser más diversas y de gran alcance.
+                        <br /> Cuento con los conocimientos practicos sobre este etiquetado sus distintos elementos y sus buenas practicas a la hora de maquetar una pagina web.
+
+                    </p>
+                </div>
+                <figure class="articuloProyecto-container_image">
+                    <img class="articuloProyecto-image" src="img/Htmlfull.png" alt="Agendita" />
+                </figure>
+            </article>
+
+            <article class="articuloProyecto">
+                <div class="articuloProyecto-left">
+                    <h3 class="articuloProyecto-title">Lenguaje de programacion</h3>
+                    <h4 class="articuloProyecto-language">Java</h4>
+                    <p class="articuloProyecto-date">
+                        <strong>Fecha de aprendizaje : 15/08/2016</strong>
+                    </p>
+                    <p class="articuloProyecto-link">
+
+                    </p>
+                    <p class="articuloProyecto-description">
+                        Java es un lenguaje de progamacion orientado a objetos comun mente utilizado en sitios web, aplicaciones moviles, aplicaciones de escritorio, incluso juegos.<br /> Este lenguaje de programacion es multiplataformas ya que puede
+                        ser ejecutado en cualquier S.O haciendo de estes una gran ventaja.<br /> Los que puedo hacer con java son multitudes de cosas desde conexiones con BD, peticiones SQL, Diseñar interfaz de usuario, relacionarlo con paginas web, estos
+                        son uno de mis experiencias con este lenguaje.
+                    </p>
+                </div>
+                <figure class="articuloProyecto-container_image">
+                    <img class="articuloProyecto-image" src="img/Java.png" alt="Agendita" />
+                </figure>
+            </article>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+
+    <div class="wrapper">
+        <h2 class="experiencia-titulo" id="experiencia">Experiencia</h2>
+    </div>
+
+    <section class="experiences">
+        <div class="wrapper">
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6TUbBBQU8sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="experience-down">
+                    <h3 class="experience-title">API Peliculas</h3>
+                    <p class="experience-description">
+                        API pelicula surguio luego de realizar varias aplicaciones en laravel al momento de introduccirme en este FRAMEWORK, ya habia realizado CRUD y conexiones a la base de datos, cargue y descargue de archivos xlsx, PDF y vi una API llamada OMDBAPI y quise
+                        ver que tanto podia hacer con esto y realizar un proyecto pequeño para expandir los conocimientos, anexare el repositorio con algunos desarrollo con lo que empece para ir adentrandome en este framework
+                    </p>
+                    <button>
+                <a  href="https://github.com/Jesus-David-Vidal-Ramirez/Laravel/tree/master" target="_black" style="text-decoration: none;">Ver Mas</a>
+                        </button>
+
+                </div>
+            </article>
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NZZ6Fhnu_RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="experience-down">
+                    <h3 class="experience-title">Sistema de Transporte</h3>
+                    <p class="experience-description">
+                        Este desarrollo fue implementado por dos lenguajes de programacion como lo son JAVA y PHP en el cual se utilizo la misma interfaz pero el Backend fue un poco distinto en JAVA se implementaron los Servlet mas el patron modelo vista controlador enlazados
+                        con la base de datos de Mysql, en el desarrollo que conlleva PHP se llevo un poco mas a fondo integrandole envio de correos y ciertas caracteristicas
+                    </p>
+                    <button>
+                <a  href="https://github.com/Jesus-David-Vidal-Ramirez/Transporte-Java/tree/master" target="_black" style="text-decoration: none;">Ver <small>JAVA</small></a>
+                        </button>
+                    <button>
+                <a  href="https://github.com/Jesus-David-Vidal-Ramirez/Transporte-PHP" target="_black" style="text-decoration: none;">Ver <small>PHP</small></a>
+              </button>
+                </div>
+            </article>
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zb1dZdjaK2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="experience-down">
+                    <h3 class="experience-title">Software Peluqueria</h3>
+                    <p class="experience-description">
+                        En el siguiente video podemos apreciar uno de los aplicativos para escritorios que he desarrollado esta idea surgue para facilitar las cuentas,cobros, inventarios, empleados que se manejan en la empresa que trabaja mi mamá, la cual cuenta con distintos
+                        apartados, una base de datos (MYsql) y realiza los diferentes CRUD como distintas funciones para calcular sueldos mensuales o ingresos en un periodo determinado de fechas, gastos realizado por la empresa y cierta creacion de nuevos
+                        estilos de corte o asignacion de precios
+
+                    </p>
+                    <button><a  href="https://github.com/Jesus-David-Vidal-Ramirez/Patron-MVC-CRUD" target="_black" style="text-decoration: none;">Ver Mas
+                    </a></button>
+                </div>
+            </article>
+
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FJJI9dFyeH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="experience-down">
+                    <h3 class="experience-title">CRUD JAVA</h3>
+                    <p class="experience-description">
+                        Desarrollo utilizando el patron modelo vista controlador desde un aplicativo de escritorio implementado en el lenguaje de java es un ejemplo sencillo donde se realiza el ingreso, la lectura de datos, actulizaciones de los datos existentes y la eliminacion
+                        de estas, como se menciona un CRUD con un patron de arquitectura de desarrollo.
+
+                    </p>
+                    <button><a  href="https://github.com/Jesus-David-Vidal-Ramirez/Patron-MVC-CRUD" target="_black">
+                    </a>Ver Mas</button>
+                </div>
+            </article>
+
+
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/goZuwmgj0k4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="experience-down">
+                    <h3 class="experience-title">Calculadora</h3>
+                    <p class="experience-description">
+                        Este es uno de los procesos academicos que pude desarrollar y el cual genere un video para demostrar y explicar un poco el funcionamiento de la elaboracion de un sotfware para tener mas visibilidad de los proyectos realizados dirigase a mi cuenta de GitHub
+                        <a href="https://github.com/Jesus-David-Vidal-Ramirez" target="_black">
+                Jesus-David-Vidal-Ramirez
+              </a>
+                    </p>
+                    <!-- <button>Ver Mas</button> -->
+                </div>
+            </article>
+
+
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/sWgxbVp2KMg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="experience-down">
+                    <h3 class="experience-title">Matrices</h3>
+                    <p class="experience-description">
+                        Implementacion de un software basico sobre una solucionador de matrices en las distintas operaciones como lo son suma, resta, multiplicacion elaborado con el lenguaje de programacion java, si deseas ver un poco mas o conocer una serie de mis proyectos
+                    </p>
+                    <a href="https://github.com/Jesus-David-Vidal-Ramirez/Matrices" target="_black" style="text-decoration: none;"><button>Ver mas</button></a>
+                </div>
+            </article>
+
+            <article class="experience">
+                <div class="Contenedor-Video">
+                    <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/i-74xrcAWD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="experience-down">
+                    <h3 class="experience-title">Instalaciones</h3>
+                    <p class="experience-description">
+                        Esta es una instalacion corta sobre SDK Java, Netbeans y XAMPP. el cual explica detenida mente la instalacion de estas herramientas para empezar en el hambito de la programacion, si deseas ver un poco mas o conocer una serie de mis proyectos
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=i-74xrcAWD4&t=10s&ab_channel=DavidD_R" target="_black" style="text-decoration: none;"><button>Ver Mas</button> </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- INFORMACION DE CONTACTO -->
+
+    <section id="conoceme">
+        <div class="wrapper">
+            <article class="conoceme">
+                <h2>¿Quien Soy?</h2>
+                <h3>Jesus David Vidal Ramirez</h3>
+                <p>
+                    Cursando una carrera profesional la cual es Ingenieria de sistemas.
+                </p>
+                <p>
+                    Cuento con experiencia en el hambito de la creacion de software de escritorios elaborados en el lenguaje JAVA, creacion de paginas web y sitios web dinamicas y no dinamicas, conocimiento en bases de datos (Mysql, MariaDB), levantamiento de requerimientos.<br
+                    /><br />
+                    <strong>En busca de crecer en esta profesion y poner todos mis
+              conocimientos en mi ámbito laboral.</strong
+            >
+          </p>
+        </article>
       </div>
-    </article>
+    </section>
 
-      <!-- <article class="experience">
-        <figure class="experience-container_image">
-          <img class="experience-image" src="img/experiencia.jpg" alt="postres yogurt griego">
-        </figure>
-        <div class="experience-down">
-          <h3 class="experience-title">Gastronomia</h3>
-          <p class="experience-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium sint excepturi quam et impedit vel aperiam mollitia in cumque veritatis. Nesciunt, hic iste rem quis nihil beatae architecto in illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam dolore expedita natus repellat ut, excepturi ipsa ipsum est reprehenderit amet, nobis iure adipisci iste tempore autem impedit! Nam, labore?</p>
+    <section id="contactame" class="contact">
+      <div class="wrapper">
+        <form action="" class="contact-form">
+          <h2>¿Te ayudo en algo?</h2>
+          <input type="text" placeholder="Dejame tu email" />
           <button>Enviar</button>
+        </form>
+
+        <div class="redes">
+          <a
+            href="https://github.com/Jesus-David-Vidal-Ramirez"
+            class="redes-link github"
+          ></a>
+          <a
+            href="https://www.facebook.com/Jesus.David.Vidal.Ramirez"
+            class="redes-link facebook"
+          ></a>
+          <a href="https://www.instagram.com/jesusvidal16/?hl=es-la" class="redes-link instagram"></a>
+          <a href="https://www.youtube.com/channel/UCdrlZ34qdmGVHFigQHUzXAw" class="redes-link youtube"> <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334zM10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9 5 .443 5 3.9-.086 3.9-5 3.9z"/></svg></a>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <article class="experience">
-        <figure class="experience-container_image">
-          <img class="experience-image" src="img/experiencia.jpg" alt="postres yogurt griego">
-        </figure>
-        <div class="experience-down">
-          <h3 class="experience-title">Gastronomia</h3>
-          <p class="experience-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium sint excepturi quam et impedit vel aperiam mollitia in cumque veritatis. Nesciunt, hic iste rem quis nihil beatae architecto in illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ullam dolore expedita natus repellat ut, excepturi ipsa ipsum est reprehenderit amet, nobis iure adipisci iste tempore autem impedit! Nam, labore?</p>
-          <button>Enviar</button>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-details">
+          <strong> &copy;Jesus Vidal 2020 desarrollador </strong>
         </div>
-      </article>
- -->
+        <div class="footer-details">
+            <strong> Portafolio web</strong>
+        </div>
+        </div>
+        </footer>
 
-<article class="experience">
-      <div class="Contenedor-Video">
-     <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/sWgxbVp2KMg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  
-
-
-</div>
-      <div class="experience-down">
-        <h3 class="experience-title">Matrices</h3>
-        <p class="experience-description">Implementacion de un software basico sobre una solucionador de matrices en las distintas operaciones como lo son suma, resta, multiplicacion elaborado con el lenguaje de programacion java, si deseas ver un poco mas o conocer una serie de mis proyectos <a href="https://github.com/Jesus-David-Vidal-Ramirez" target="_black"> Jesus-David-Vidal-Ramirez </a></p>
-        <button>Enviar</button>
-      </div>
-    </article>
-
-    <article class="experience">
-      <div class="Contenedor-Video">
-	  <iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/i-74xrcAWD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
+        <script src="/Js/MenuJs.js">
+        </script>
 
 
-</div>
-      <div class="experience-down">
-        <h3 class="experience-title">Instalaciones</h3>
-        <p class="experience-description">Esta es una instalacion corta sobre SDK Java, Netbeans y XAMPP. el cual explica detenida mente la instalacion de estas herramientas para empezar en el hambito de la programacion, si deseas ver un poco mas o conocer una serie de mis proyectos <a href="https://github.com/Jesus-David-Vidal-Ramirez" target="_black"> Jesus-David-Vidal-Ramirez </a></p>
-        <button>Enviar</button>
-      </div>
-    </article>
-  </div>
-  </section>
-
-  <section id="conoceme">
-    <div class="wrapper"> 
-      <article class="conoceme">
-        <h2 >¿Quien Soy?</h2>
-        <h3> Jesus David Vidal Ramirez </h3>
-        <p>Cursando una carrera profesional la cual es Ingenieria de sistemas.</p>
-        <p>Cuento con experiencia en el hambito de la creacion de software de escritorios elaborados en el lenguaje JAVA, creacion de paginas web y sitios web dinamicas y no dinamicas, conocimiento en bases de datos (Mysql, MariaDB), levantamiento de requerimientos.<br><br>
-          <strong>En busca de crecer en esta profesion y poner todos mis conocimientos en mi ámbito laboral.</strong>
-           </p>
-      </article>
-    </div>
-  </section>
-
-  <section id="contactame" class="contact">
-    <div class="wrapper">
-    <form action="" class="contact-form">
-      <h2>¿Te ayudo en algo?</h2>
-      <input type="text" placeholder="Dejame tu email">
-      <button>Enviar</button>
-    </form>
-
-   <div class="redes">
-    <a href="https://github.com/Jesus-David-Vidal-Ramirez" class="redes-link github"></a>
-    <a href="https://www.facebook.com/Jesus.David.Vidal.Ramirez" class="redes-link facebook"></a>
-    <a href="#" class="redes-link instagram"></a>
-    <a href="#" class="redes-link twitter"></a>
-   </div>
-  </div>
-  
-  </section>
-
-  <footer class="footer" >
-    <div class="wrapper">
-    <div class="footer-details" >
-      <strong> &copy;Jesus Vidal 2020 desarrollador </strong>
-
-    </div>
-    <div class="footer-details"  >
-      <strong> Portafolio web</strong>
-    </div>
-  </div>
-  </footer> 
-
-  <script>
-  
-  console.log('el escript guardado');
-
-  const menu = document.querySelector('.menu');
-
-  console.log(menu);
-
-  const  boton = document.querySelector('.Fig-menu') 
-  
-  console.log(boton);
-
-  boton.addEventListener( 'click' , Mostrar);
-
-  const changes = window.matchMedia('screen and (max-width:767px)');
-
-  changes.addListener(validacion);
-
-  function validacion(event){
-    
-    // console.log(event);
-    if(event.matches){
-      boton.addEventListener('click' , Mostrar);
-      console.log("menor que 767");
-    }else{
-      console.log("no muestra nada mayor qu 1");
-      boton.removeEventListener('click' , Mostrar);
-    }
-
-  }
-
-  function Mostrar(){
-  
-    if(menu.classList.contains('Animacion-Menu')){
-      menu.classList.remove('Animacion-Menu');
-      console.log("Mostrar quitado");
-    }else{
-      menu.classList.add('Animacion-Menu');
-      console.log("Mostrar abierto");
-    }
-
-  }
-
-  //Agregar clase/ menu.classList.add('Animacion-Menu');
-
-
-</script>
-
-<!-- <script src="Js/MenuJs.js">
-  
-</script> -->
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.2.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
 </body>
+
 </html>
